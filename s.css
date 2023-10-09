@@ -1,0 +1,70 @@
+@font-face {
+    font-family: f1;
+    src: url(Lato-Regular.ttf) format('opentype');
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 6%;
+    background: url(img/hero.png);
+    background-size:cover;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.hero h1{
+    background-image: linear-gradient(43deg,rgba(65, 89, 208, 0.706) 0%,rgba(200, 80, 192, 0.725) 46%,rgba(255, 205, 112, 0.89) 100%);
+  -webkit-background-clip: text;
+  color: transparent;font-size: 5em;
+  font-family: f1;
+  font-weight: 900;
+  margin: 0px;
+}
+.hero h3{
+    font-size: 2em;
+    color:#272a30;
+    margin: 0px;
+}
+.hero a{
+    text-decoration: none;
+    background: linear-gradient(to right, #8784ce, #d99fb1);
+    padding: 10px 20px;
+    border-radius: 40px;
+    width: fit-content;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hero div{
+    display: grid;
+    align-items: center;
+    gap: 10px;
+}
+.hero img{
+    width: 80%;
+    height: auto;
+}
+.hero div:nth-child(2){
+    justify-content: end;
+    display: flex;
+
+}
+@media(max-width:1000px){
+    .hero h1{
+        font-size: 4em;
+    }
+    .hero h3{
+        font-size: 1.5rem;
+    }
+    .hero img{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .hero{
+        grid-template-columns: 1fr;
+    }
+}
